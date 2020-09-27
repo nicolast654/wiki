@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <h1> This Title already exists!</h1>
+    <hr>
+    <p> This title already exists. Do you want to <a href="{% url 'encyclopedia:edit' title %}">edit</a> it</p>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+Error, entry not found.
+{% endblock %}
+
+{% block body %}
+<h1>Error! {{entry}} doesn't exist.</h1>
+<hr>
+<p>It looks like you have entered an entry that is not available yet. If you want to create it, just click <a href="{% url 'encyclopedia:new' %}">here</a>.</p>
+{% endblock %}
